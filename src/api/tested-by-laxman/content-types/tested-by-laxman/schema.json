@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tested_by_laxmen",
+  "info": {
+    "singularName": "tested-by-laxman",
+    "pluralName": "tested-by-laxmen",
+    "displayName": "tested by laxman"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "whatisthe": {
+      "type": "string"
+    }
+  }
+}
