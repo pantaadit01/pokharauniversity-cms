@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colleges",
+  "info": {
+    "singularName": "college",
+    "pluralName": "colleges",
+    "displayName": "College"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 255,
+      "minLength": 5
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 5
+    },
+    "establishedYear": {
+      "type": "string",
+      "required": true,
+      "maxLength": 4,
+      "minLength": 4
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "websiteURL": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 255,
+      "minLength": 5
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

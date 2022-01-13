@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_banks",
+  "info": {
+    "singularName": "question-bank",
+    "pluralName": "question-banks",
+    "displayName": "QuestionBank",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 255,
+      "minLength": 5
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course",
+      "inversedBy": "question_bank"
+    }
+  }
+}
