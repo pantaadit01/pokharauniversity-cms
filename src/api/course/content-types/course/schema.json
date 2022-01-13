@@ -29,7 +29,7 @@
     "creditHours": {
       "type": "integer",
       "required": true,
-      "unique": true,
+      "unique": false,
       "max": 5,
       "min": 1
     },
