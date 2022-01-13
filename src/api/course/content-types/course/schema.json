@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "courseCode": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10,
+      "minLength": 3
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 20,
+      "minLength": 5
+    },
+    "creditHours": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "max": 5,
+      "min": 1
+    },
+    "syllabus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::syllabus.syllabus",
+      "inversedBy": "course"
+    },
+    "question_bank": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::question-bank.question-bank",
+      "inversedBy": "course"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note",
+      "mappedBy": "course"
+    }
+  }
+}

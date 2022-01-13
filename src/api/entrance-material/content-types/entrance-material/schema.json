@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entrance_materials",
+  "info": {
+    "singularName": "entrance-material",
+    "pluralName": "entrance-materials",
+    "displayName": "EntranceMaterial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 255,
+      "minLength": 5
+    },
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
