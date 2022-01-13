@@ -29,7 +29,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::course.course",
-      "inversedBy": "syllabus"
+      "mappedBy": "syllabus"
     }
   }
 }

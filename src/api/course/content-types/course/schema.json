@@ -4,7 +4,8 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "Course"
+    "displayName": "Course",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,7 +23,7 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "maxLength": 20,
+      "maxLength": 50,
       "minLength": 5
     },
     "creditHours": {
