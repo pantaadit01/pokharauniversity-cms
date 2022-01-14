@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/e53942ff-f78b-4a6c-953b-b002f56e86ae/resourceGroups/pokharauniversity_cms/providers/Microsoft.Web/sites/pu-cms",
+    "appService.deploySubpath": "."
+}
